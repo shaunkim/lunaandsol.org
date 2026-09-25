@@ -1,6 +1,6 @@
 # Luna and Sol website
 
-A no-build static website. Upload the contents of this folder to a GitHub repository and enable GitHub Pages, or point another static host at the repository root. The published entry point is `index.html`; there are no dependencies or build commands.
+A no-build static website hosted on GitHub Pages at [shaunkim.github.io/lunaandsol.org](https://shaunkim.github.io/lunaandsol.org/). The published entry point is `index.html`; there are no dependencies or build commands.
 
 ## Before launch
 
@@ -27,10 +27,9 @@ Official guidance:
 
 ## GitHub Pages
 
-1. Create a public GitHub repository such as `lunaandsol.org` and upload `index.html` (and this README if you want to retain the setup notes).
-2. In the repository, open **Settings → Pages**, select deployment from the `main` branch and `/ (root)`, then save.
-3. In Pages, enter `lunaandsol.org` as the custom domain. Follow the DNS records GitHub displays; typically this means a `www` CNAME and apex A/AAAA records at GoDaddy. Do not guess if GitHub's instructions differ.
-4. Wait for DNS verification, enable **Enforce HTTPS**, and test the domain on mobile and desktop.
+GitHub Pages is enabled from the `main` branch and repository root. The live address is [https://shaunkim.github.io/lunaandsol.org/](https://shaunkim.github.io/lunaandsol.org/).
+
+When `lunaandsol.org` is registered, open the repository's **Settings → Pages** and add it as the custom domain. Follow the DNS records GitHub displays at GoDaddy; typically this means a `www` CNAME and apex A/AAAA records. Wait for DNS verification, enable **Enforce HTTPS**, and test the domain on mobile and desktop.
 
 GitHub's current instructions: [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
 
