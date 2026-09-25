@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Luna and Sol builds thoughtful software for everyday life.">
+  <title>Luna and Sol — Thoughtful software</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23101827'/%3E%3Ccircle cx='28' cy='32' r='17' fill='%23f6c96e'/%3E%3Ccircle cx='37' cy='25' r='15' fill='%23101827'/%3E%3Cpath d='M45 40v9m-4.5-4.5h9' stroke='%23f6c96e' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root{color-scheme:dark;--ink:#101827;--panel:#152235;--paper:#f4f1e9;--muted:#aab4c2;--body-copy:#c1cad4;--line:rgba(244,241,233,.15);--gold:#f6c96e;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    :root[data-theme="sol"]{color-scheme:light;--ink:#f5f2eb;--panel:#fffdf8;--paper:#152235;--muted:#58677a;--body-copy:#435168;--line:rgba(16,24,39,.15);--gold:#a66716}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-size:16px;line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:3px}.shell{width:min(1120px,calc(100% - 48px));margin:auto}
+    header{height:88px;display:flex;align-items:center;gap:30px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:1.05rem;font-weight:650;letter-spacing:-.02em}.mark{width:36px;height:36px}.nav{display:flex;gap:24px;margin-left:auto}.nav a{color:var(--muted);font-size:.92rem;text-decoration:none}.nav a:hover{color:var(--paper)}.mode-toggle{display:flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px}.mode-button{min-height:36px;padding:6px 11px;border:0;border-radius:999px;background:transparent;color:var(--muted);font:inherit;font-size:.82rem;cursor:pointer;white-space:nowrap}.mode-button[aria-pressed="true"]{background:var(--gold);color:#152235}.mode-button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .hero{position:relative;min-height:530px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:42px;padding:76px 0 85px;overflow:hidden}.eyebrow{color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.17em;font-weight:700}.hero h1{max-width:650px;margin:19px 0 20px;font-size:clamp(3.2rem,7vw,6rem);line-height:.99;letter-spacing:-.075em;font-weight:590}.hero h1 span{color:var(--gold)}.hero p{max-width:500px;margin:0;color:var(--body-copy);font-size:1.15rem;line-height:1.75}.hero-art{height:330px;position:relative;display:grid;place-items:center}.orbit{position:absolute;width:290px;height:290px;border:1px solid rgba(246,201,110,.23);border-radius:50%;transform:rotate(-28deg) scaleY(.58)}.orbit.two{width:370px;height:370px;transform:rotate(28deg) scaleY(.58);border-color:rgba(209,225,244,.17)}.sun{width:168px;height:168px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#fff0ba,#f6c96e 57%,#d88d49);box-shadow:0 0 90px rgba(246,201,110,.15)}.spark{position:absolute;width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 18px var(--gold)}.spark.one{top:47px;right:78px}.spark.two{bottom:48px;left:67px;width:5px;height:5px}
+    .section{border-top:1px solid var(--line);padding:70px 0 82px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.section h2{font-size:2rem;letter-spacing:-.045em;margin:8px 0 0;font-weight:560}.section-head p{max-width:380px;margin:0;color:var(--muted)}.apps{display:grid;grid-template-columns:1fr;gap:16px}.app-card{min-height:150px;padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:24px}.app-intro{display:flex;align-items:center;gap:18px}.app-icon{width:54px;height:54px;flex:none;border-radius:14px;background:linear-gradient(145deg,#31415a,#1a2940);display:grid;place-items:center;color:#f6c96e;font-size:.88rem;font-weight:700;letter-spacing:-.04em}.app-card h3{margin:0 0 4px;font-size:1.15rem;font-weight:600}.app-card p{max-width:580px;margin:0;color:var(--muted);font-size:.93rem}.app-actions{display:flex;align-items:center;gap:10px;flex:none}.app-actions a{min-height:42px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;color:var(--paper);font-size:.86rem;font-weight:600;text-decoration:none;white-space:nowrap}.app-actions a:first-child{background:var(--gold);border-color:var(--gold);color:#152235}.app-actions a:hover{filter:brightness(1.08)}.app-actions a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.about h2{max-width:330px}.about p{max-width:650px;margin:0;color:var(--body-copy);font-size:1.08rem;line-height:1.8}.contact{padding:28px 32px;background:var(--panel);border:1px solid var(--line);border-radius:12px;display:flex;justify-content:space-between;align-items:center;gap:24px}.contact h2{font-size:1.35rem;margin:0 0 5px}.contact p{margin:0;color:var(--muted)}.contact a{color:var(--gold);text-underline-offset:4px;white-space:nowrap}
+    footer{margin-top:72px;border-top:1px solid var(--line);padding:24px 0 35px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.85rem}.footer-brand{color:var(--paper)}
+    @media(max-width:700px){.shell{width:min(100% - 36px,560px)}header{height:72px}.nav{gap:16px}.nav a{font-size:.82rem}.hero{grid-template-columns:1fr;gap:0;padding:65px 0 48px;min-height:0}.hero h1{font-size:clamp(3.4rem,14vw,5rem)}.hero p{font-size:1.03rem}.hero-art{height:240px}.sun{width:132px;height:132px}.orbit{width:230px;height:230px}.orbit.two{width:290px;height:290px}.section{padding:55px 0 60px}.section-head{display:block}.section-head p{margin-top:12px}.app-card{min-height:0;align-items:flex-start;flex-direction:column;gap:20px}.app-actions{flex-wrap:wrap}.about{grid-template-columns:1fr;gap:18px}.contact{align-items:flex-start;flex-direction:column;padding:24px}.contact a{white-space:normal}footer{margin-top:55px;flex-direction:column;gap:5px}}
+    @media(max-width:440px){header{height:auto;min-height:72px;flex-wrap:wrap;gap:8px;padding:12px 0}.nav{margin-left:auto;gap:11px}.nav a{font-size:.76rem}.mode-toggle{width:100%;justify-content:flex-end}.mode-button{min-height:32px;padding:5px 10px;font-size:.78rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <a class="brand" href="#top" aria-label="Luna and Sol home">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="28" cy="32" r="19" fill="#f6c96e"/><circle cx="39" cy="24" r="17" fill="#101827"/><path d="M47 42v10m-5-5h10" stroke="#f6c96e" stroke-width="2.5" stroke-linecap="round"/></svg>
+      Luna and Sol
+    </a>
+    <nav class="nav" aria-label="Main navigation"><a href="#apps">Apps</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="mode-toggle" role="group" aria-label="Color mode"><button class="mode-button" id="luna-mode" type="button" aria-pressed="true">Luna mode</button><button class="mode-button" id="sol-mode" type="button" aria-pressed="false">Sol mode</button></div>
+  </header>
+  <main id="top" class="shell">
+    <section class="hero" aria-labelledby="headline">
+      <div><div class="eyebrow">Software company</div><h1 id="headline">Made for the <span>everyday.</span></h1><p>Luna and Sol creates thoughtful apps designed to make daily life a little more considered.</p></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="sun"></div><i class="spark one"></i><i class="spark two"></i></div>
+    </section>
+    <section class="section" id="apps" aria-labelledby="apps-heading">
+      <div class="section-head"><div><div class="eyebrow">The collection</div><h2 id="apps-heading">Our apps</h2></div><p>Useful tools, made with care. More from Luna and Sol is on the way.</p></div>
+      <div class="apps"><article class="app-card"><div class="app-intro"><div class="app-icon" aria-hidden="true">2048³</div><div><h3>2048³</h3><p>A cube-shaped twist on the classic 2048 puzzle. Build a 2048 tile on all three faces, then keep going for a high score.</p></div></div><div class="app-actions"><a href="https://apps.apple.com/us/app/2048/id6803536487" target="_blank" rel="noopener noreferrer">View on the App Store</a><a href="https://github.com/shaunkim/2048-cube-web" target="_blank" rel="noopener noreferrer">View source on GitHub</a></div></article></div>
+    </section>
+    <section class="section about" id="about" aria-labelledby="about-heading"><div><div class="eyebrow">A little about us</div><h2 id="about-heading">Quietly useful software.</h2></div><p>Luna and Sol creates clear, reliable apps for people. We believe the best tools feel natural to use and earn their place in your day.</p></section>
+    <section class="contact" id="contact" aria-labelledby="contact-heading"><div><h2 id="contact-heading">Get in touch</h2><p>Questions about our apps or working with us?</p></div><a href="mailto:hello@lunaandsol.org">hello@lunaandsol.org</a></section>
+  </main>
+  <footer class="shell"><span class="footer-brand">© <span id="year">2026</span> Luna and Sol</span><span>Made with ❤️ in Korea</span></footer>
+  <script>
+    const root = document.documentElement;
+    const lunaButton = document.getElementById("luna-mode");
+    const solButton = document.getElementById("sol-mode");
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+
+    function setMode(mode) {
+      const isSol = mode === "sol";
+      root.dataset.theme = isSol ? "sol" : "luna";
+      lunaButton.setAttribute("aria-pressed", String(!isSol));
+      solButton.setAttribute("aria-pressed", String(isSol));
+      themeColor.content = isSol ? "#f5f2eb" : "#101827";
+      try { localStorage.setItem("lunaandsol-mode", isSol ? "sol" : "luna"); } catch {}
+    }
+
+    lunaButton.addEventListener("click", () => setMode("luna"));
+    solButton.addEventListener("click", () => setMode("sol"));
+    try {
+      const savedMode = localStorage.getItem("lunaandsol-mode");
+      if (savedMode === "sol") setMode("sol");
+    } catch {}
+  </script>
+</body>
+</html>
