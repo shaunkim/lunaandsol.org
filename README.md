@@ -1,18 +1,17 @@
 # Luna and Sol website
 
-A no-build static website hosted on GitHub Pages at [shaunkim.github.io/lunaandsol.org](https://shaunkim.github.io/lunaandsol.org/). The published entry point is `index.html`; there are no dependencies or build commands.
+A no-build static website hosted on GitHub Pages at [www.lunaandsol.org](https://www.lunaandsol.org/). The published entry point is `index.html`; there are no dependencies or build commands.
 
-## Before launch
+## Keeping the site current
 
-- Confirm that `lunaandsol.org` is registered and configure DNS at GoDaddy to point to the chosen host. Add the host's requested DNS records and enable HTTPS.
-- Replace `hello@lunaandsol.org` with an email address you control on the company's domain. Set up that mailbox and test receiving messages first.
-- Replace the generic studio copy with accurate details about the legal business, its location/contact details as appropriate, and the actual apps. The 2048³ App Store and GitHub links are now in the app catalog; keep those destinations and the listing information current.
+- Keep the published contact email current and check that it receives messages.
+- Keep the app listings and links current. Add Flame Aid release links when they are public.
 - Add a privacy policy for each app and ensure the page reflects its actual data practices before entering a privacy URL in App Store Connect.
-- Make the site's public contact details, domain, and business identity consistent with your developer account and business records.
+- Make the site's public contact details and business identity consistent with your developer account and business records.
 
 ## App Store organization credibility
 
-Apple expects an organization's website to be publicly available, functional, and on a domain associated with that organization. A thin placeholder page or registrar parking page is not enough. A useful company site should have original, accurate company information, working domain email/contact details, real app listings when available, and privacy/support information that matches the apps.
+Apple expects an organization's website to be publicly available and functional. A useful company site should have original, accurate company information, working contact details, real app listings when available, and privacy/support information that matches the apps.
 
 If you mean **public App Store distribution**, the Apple Developer Program is generally the relevant program. Apple says organization enrollment requires a legal entity, D‑U‑N‑S Number (with stated exceptions), authority to bind the organization, a work email on its domain, and a functional organization website.
 
@@ -27,11 +26,7 @@ Official guidance:
 
 ## GitHub Pages
 
-GitHub Pages is enabled from the `main` branch and repository root. The live address is [https://shaunkim.github.io/lunaandsol.org/](https://shaunkim.github.io/lunaandsol.org/).
-
-When `lunaandsol.org` is registered, open the repository's **Settings → Pages** and add it as the custom domain. Follow the DNS records GitHub displays at GoDaddy; typically this means a `www` CNAME and apex A/AAAA records. Wait for DNS verification, enable **Enforce HTTPS**, and test the domain on mobile and desktop.
-
-GitHub's current instructions: [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+GitHub Pages publishes this site from the `main` branch and repository root. The live address is [https://www.lunaandsol.org/](https://www.lunaandsol.org/).
 
 ## Updating the website yourself
 
