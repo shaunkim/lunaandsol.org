@@ -1,6 +1,6 @@
 # Luna and Sol website
 
-A no-build static website hosted on GitHub Pages at [shaunkim.github.io/lunaandsol.org](https://shaunkim.github.io/lunaandsol.org/). The published entry point is `index.html`; the shared header mark and favicon are in `logo.svg`. There are no dependencies or build commands.
+A no-build static website hosted on GitHub Pages at [shaunkim.github.io/lunaandsol.org](https://shaunkim.github.io/lunaandsol.org/). The published entry point is `index.html`; there are no dependencies or build commands.
 
 ## Before launch
 
@@ -38,7 +38,7 @@ GitHub's current instructions: [Managing a custom domain for your GitHub Pages s
 There is no separate admin login on the website. To make changes, sign in to the GitHub account that owns the site repository or has write access to it:
 
 1. Open the `lunaandsol.org` repository on GitHub.
-2. Select `index.html` from the file list to edit page text and layout. To update the logo, open `logo.svg` instead.
+2. Select `index.html` from the file list.
 3. Click the pencil **Edit this file** button.
 4. Make your changes. For text, use the editor's search (`⌘F` on Mac, `Ctrl+F` on Windows) to find the current wording.
 5. Click **Commit changes**, enter a short summary, and confirm the commit.
