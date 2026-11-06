@@ -6,7 +6,7 @@ A no-build static website hosted on GitHub Pages at [www.lunaandsol.org](https:/
 
 - Keep the published contact email current and check that it receives messages.
 - Keep the app listings and links current. Add Flame Aid release links when they are public.
-- Keep the [2048³ Android privacy policy](https://www.lunaandsol.org/2048-cube-privacy-policy.html) accurate for the shipped version; add a separate policy or update it before a version introduces different data practices.
+- Keep the [2048³ Android privacy policy](https://www.lunaandsol.org/2048-cube-privacy-policy.html) and [Flame Aid Android privacy policy](https://www.lunaandsol.org/flame-aid-privacy-policy.html) accurate for their shipped versions.
 - Make the site's public contact details and business identity consistent with your developer account and business records.
 
 ## App Store organization credibility
